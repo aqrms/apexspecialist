@@ -1,7 +1,23 @@
 {
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/.sfdx": true
-  }
+    "workbench.colorTheme": "Default Dark Modern",
+    "C_Cpp.default.compilerPath": "c:\\Users\\aquar\\Desktop\\CWorkspace\\sum.c",
+    "cmake.additionalCompilerSearchDirs": [
+        "C:/msys64/mingw32/bin",
+        "C:/msys64/mingw64/bin",
+        "C:/msys64/clang32/bin",
+        "C:/msys64/clang64/bin",
+        "C:/msys64/clangarm64/bin",
+        "C:/msys64/ucrt64/bin"
+    ],
+    "code-runner.runInTerminal": true,
+    "editor.wordWrap": "on",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "redhat.telemetry.enabled": false,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.semi": true,
+    "prettier.prettierPath": "",
+    "prettier.tabWidth": 4
 }
