@@ -19,5 +19,7 @@
     "notebook.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.semi": true,
     "prettier.prettierPath": "",
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "salesforce.einsteinForDevelopers.enableAutocompletions": true,
+    "salesforce.einsteinForDevelopers.enable": true
 }
