@@ -21,6 +21,5 @@
     "prettier.prettierPath": "",
     "prettier.tabWidth": 4,
     "salesforce.einsteinForDevelopers.enableAutocompletions": true,
-    "salesforce.einsteinForDevelopers.enable": true,
-    "files.eol": "\n"
+    "salesforce.einsteinForDevelopers.enable": true
 }
