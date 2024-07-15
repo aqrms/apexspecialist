@@ -20,14 +20,15 @@
  * See the Apex Language Reference for more information about Testing and Code Coverage.
  */
 @isTest
-private class AnimalLocatorTest {
+private class ParkLocatorTest {
 
     @isTest
-    static void testAnimalLocator() {
-        Test.setMock(HttpCalloutMock.class, new AnimalLocatorMock());
+    static void testCallOut() {
 
-        String response = AnimalLocator.getAnimalNameById(1);
-        
-        System.assertEquals('chicken', response);
+        Test.setMock(WebServiceMock.class, new ParkServiceMock());
+        Test.startTest();
+        String[] parks = ParkLocator.country('Korea');
+        Test.stopTest();
+        System.assertEquals(3, parks.size());
     }
 }

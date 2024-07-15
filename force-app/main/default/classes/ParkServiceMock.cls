@@ -20,14 +20,22 @@
  * See the Apex Language Reference for more information about Testing and Code Coverage.
  */
 @isTest
-private class AnimalLocatorTest {
+global class ParkServiceMock implements WebServiceMock{
+    
+    global void doInvoke(
+           Object stub,
+           Object request,
+           Map<String, Object> response,
+           String endpoint,
+           String soapAction,
+           String requestName,
+           String responseNS,
+           String responseName,
+           String responseType) {
 
-    @isTest
-    static void testAnimalLocator() {
-        Test.setMock(HttpCalloutMock.class, new AnimalLocatorMock());
+        ParkService.byCountryResponse response_x = new ParkService.byCountryResponse();
+        response_x.return_x = new List<String>{'Yellowstone', 'Mackinac National Park', 'Yosemite'};
 
-        String response = AnimalLocator.getAnimalNameById(1);
-        
-        System.assertEquals('chicken', response);
+        response.put('response_x', response_x);
     }
 }
